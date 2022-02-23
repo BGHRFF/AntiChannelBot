@@ -1,0 +1,40 @@
+{
+    "name": "@BGHRFF tərəfindən hazırlanmış anti channel botu.",
+    "description": "Mesajlaşma üçün kanaldan istifadə edən userləri atmaq üçün Telegram Botu. Made by @BGHRFF.",
+    "keywords": [
+        "telegram",
+        "AntiChannel",
+        "channel",
+        "Group",
+        "manager",
+        "bot"
+    ],
+    "repository": "https://github.com/BGHRFF/AntiChannelBot",
+    "website": "https://bybaghirov.com",
+    "success_url": "https://t.me/BaghirovBlog",
+    "env": {
+        "API_ID": {
+            "description": "Bu dəyəri buradan alın: my.telegram.org"
+        },
+        "API_HASH": {
+            "description": "Bu dəyəri buradan alın: my.telegram.org"
+        },
+        "BOT_TOKEN": {
+            "description": "Buradan alın: @BotFather"
+        },
+        "DATABASE_URL": {
+            "description": "Söhbət Parametrlərini Saxlamaq üçün MongoDB URI. Video Təlimatı Buradadır: https://www.youtube.com/watch?v=aXlF80Cn7iU"
+        }
+    },
+    "buildpacks": [
+        {
+            "url": "heroku/python"
+        }
+    ],
+    "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "free"
+        }
+    }
+}
